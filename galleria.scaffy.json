@@ -1,0 +1,17 @@
+{
+  "cra-plus": {
+    "depNames": ["framer-motion", "styled-components", "react-router-dom"],
+    "devDepNames": [
+      "eslint-config-prettier",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "prop-types"
+    ],
+    "remoteConfigurationUrls": [
+      "https://raw.githubusercontent.com/OlaoluwaM/configs/main/common/.eslintignore",
+      "https://raw.githubusercontent.com/OlaoluwaM/configs/main/common/.prettierrc",
+      "https://raw.githubusercontent.com/OlaoluwaM/configs/main/common/.prettierignore",
+      "https://raw.githubusercontent.com/OlaoluwaM/configs/main/node/commitlint.config.js"
+    ]
+  }
+}
