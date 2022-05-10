@@ -1,9 +1,12 @@
-function App() {
+import MediaButtons from './components/MediaButton';
+import GlobalThemeProvider from './providers/theme';
+
+export default function App() {
   return (
-    <div className='App'>
-      <h1>Galleria Site</h1>
-    </div>
+    <GlobalThemeProvider>
+      <div>
+        <MediaButtons />
+      </div>
+    </GlobalThemeProvider>
   );
 }
-
-export default App;

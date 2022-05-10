@@ -1,0 +1,61 @@
+{
+  "color": {
+    "fg": "#000000",
+    "bg": "#FFFFFF",
+    "gray": {
+      "100": "#F3F3F3",
+      "DEFAULT": "#E5E5E5",
+      "900": "#7D7D7D"
+    }
+  },
+
+  "font": {
+    "family": "Libre Baskerville",
+
+    "sizes": {
+      "display": {
+        "value": "200px",
+        "lineHeight": "150px"
+      },
+      "heading1": {
+        "value": "56px",
+        "lineHeight": "64px"
+      },
+      "heading2": {
+        "value": "24px",
+        "lineHeight": "29px"
+      },
+      "heading3": {
+        "value": "18px",
+        "lineHeight": "22px"
+      },
+      "subhead1": {
+        "value": "15px",
+        "lineHeight": "19px"
+      },
+      "subhead2": {
+        "value": "13px",
+        "lineHeight": "17px"
+      },
+      "link1": {
+        "value": "12px",
+        "lineHeight": "15px",
+        "letterSpacing": "2.5px"
+      },
+      "link2": {
+        "value": "9px",
+        "lineHeight": "11px",
+        "letterSpacing": "2px"
+      },
+      "body": {
+        "value": "14px",
+        "lineHeight": "28px"
+      }
+    },
+
+    "weights": {
+      "bold": "900",
+      "regular": "400"
+    }
+  }
+}
