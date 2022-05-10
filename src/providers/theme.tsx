@@ -1,5 +1,3 @@
-// TODO: Add to dev-vault
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 import designTokens from '../configs/design-tokens.json';
 
