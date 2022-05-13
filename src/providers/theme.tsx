@@ -2,29 +2,12 @@ import PropTypes from 'prop-types';
 import designTokens from '../configs/design-tokens.json';
 
 import { isOptional } from '../types';
-import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
 import { includedInCollection, objSet } from '../utils';
 import { LS_THEME_KEY, THEME_ATTRIBUTE } from '../constants';
+import { ThemeProvider, DefaultTheme as StyleGuide } from 'styled-components';
 
 type ThemeVariant = 'dark' | 'light';
-interface Shade {
-  [colorName: string | number]: string;
-}
-
-interface StyleGuide {
-  color: {
-    bg: string;
-    fg: string;
-    gray: Shade;
-  };
-
-  readonly font: {
-    weight: {
-      [Weight in 'bold' | 'regular']: string;
-    };
-  };
-}
 
 type ColorThemes = {
   readonly [Key in ThemeVariant]: StyleGuide['color'];

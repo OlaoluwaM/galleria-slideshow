@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { ReactComponent as RightMediaBtnSvg } from '../assets/shared/icon-next-button.svg';
-import { ReactComponent as LeftMediaBtnSvg } from '../assets/shared/icon-back-button.svg';
+import { ReactComponent as RightMediaBtnSvg } from '../assets/icon-next-button.svg';
+import { ReactComponent as LeftMediaBtnSvg } from '../assets/icon-back-button.svg';
 
 const MediaButtonWrapper = styled.div`
   display: flex;
@@ -9,15 +9,19 @@ const MediaButtonWrapper = styled.div`
   align-items: center;
   transition: opacity 300ms ease;
   max-width: 76px;
-  cursor: pointer;
 
-  div:hover,
-  div.disabled {
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  button:hover,
+  button.disabled {
     transition-duration: 150ms;
     opacity: 0.5;
   }
 
-  div.disabled {
+  button.disabled {
     opacity: 0.15;
   }
 `;
@@ -25,13 +29,13 @@ const MediaButtonWrapper = styled.div`
 export default function MediaButtons() {
   return (
     <MediaButtonWrapper className='h-4'>
-      <div className='media-button-left'>
+      <button type='button' className='media-button-left'>
         <LeftMediaBtnSvg />
-      </div>
+      </button>
 
-      <div className='media-button-right'>
+      <button type='button' className='media-button-right'>
         <RightMediaBtnSvg />
-      </div>
+      </button>
     </MediaButtonWrapper>
   );
 }

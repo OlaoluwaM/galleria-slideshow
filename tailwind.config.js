@@ -43,7 +43,7 @@ function extractSetFromCollection(collectionOne, collectionTwo, excludeSubset = 
   });
 }
 
-module.exports = {
+const config = {
   darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -52,9 +52,11 @@ module.exports = {
       fontFamily: {
         primary: [designTokens.font.family, 'sans-serif'],
       },
-      fontSizes: mapDesignTokenFontSizes(),
+      fontSize: mapDesignTokenFontSizes(),
       weight: designTokens.font.weights,
     },
   },
   plugins: [],
 };
+
+module.exports = config;
