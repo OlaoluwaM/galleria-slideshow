@@ -31,7 +31,7 @@ const colorThemes: ColorThemes = {
 };
 
 interface GlobalThemeProviderProps {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 export default function GlobalThemeProvider({
   children,
@@ -56,7 +56,8 @@ export default function GlobalThemeProvider({
 }
 
 GlobalThemeProvider.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)])
+    .isRequired,
 };
 
 interface ThemeObserverComponents {
